@@ -1,9 +1,9 @@
-FROM openjdk:8 AS BUILD_IMAGE
+FROM openjdk:11 AS BUILD_IMAGE
 RUN apt update
 RUN apt install maven -y
 
-RUN git clone https://github.com/Hussain147/paac-with-ecs.git
-RUN cd paac-with-ecs
+RUN git clone https://github.com/Hussain147/experiment.git
+RUN cd experiment
 RUN mvn clean install
 
 
